@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tan_background"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="serif"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="FLAVOURS"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkbox_choc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chocolate"
+            android:textColor="#4E342E"
+            android:textSize="16sp"
+            android:paddingLeft="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pista"
+            android:textColor="#8BC34A"
+            android:textSize="16sp"
+            android:paddingLeft="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_butter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strawberry"
+            android:textColor="#FF80AB"
+            android:textSize="16sp"
+            android:paddingLeft="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black Current"
+            android:textColor="#B388FF"
+            android:textSize="16sp"
+            android:paddingLeft="16sp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="TOPPINGS"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkbox_Nuts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuts"
+            android:textSize="16sp"
+            android:paddingLeft="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_ChoChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choco Chips"
+            android:textSize="16sp"
+            android:paddingLeft="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_sprinkles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sprinkles"
+            android:textSize="16sp"
+            android:paddingLeft="16sp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            style="@style/HeaderTextStyle"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="#D81B60"
+                android:onClick="increment"
+                android:text="+"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginRight="8dp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp"
+                android:text="0 "/>
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="#D81B60"
+                android:onClick="decrement"
+                android:text="-"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#D81B60"
+            android:onClick="submitOrder"
+            android:text="ORDER"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</ScrollView>
